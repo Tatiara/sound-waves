@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace musicsPoo
+namespace Persistencia
 {
-    class Musica
-    {   //propiedades
-       
+    class Playlist
+    {
     }
 }

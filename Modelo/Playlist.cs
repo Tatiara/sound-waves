@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace musicsPoo
+namespace Modelo
 {
-    class Musica
-    {   //propiedades
-       
+    class Playlist
+    {
+        public List<Musica> Musicas { get; set; }
+
     }
 }

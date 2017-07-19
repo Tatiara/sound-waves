@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace musicsPoo
 {
     class Usuario
-    {
+    {   //propiedades
+       
     }
 }

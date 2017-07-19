@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace musicsPoo
 {
-    class Album
+    class Playlist
     {
+        //usar j & q
     }
 }
