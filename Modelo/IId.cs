@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace musicsPoo
+namespace Modelo
 {
-    class Musica
-    {   //propiedades
-       
+    public interface IId
+    {
+        int Id { get; set; }
     }
 }

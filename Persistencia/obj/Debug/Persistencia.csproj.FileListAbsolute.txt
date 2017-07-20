@@ -1,0 +1,3 @@
+C:\Users\Tatiara\Documents\sound-waves\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\Tatiara\Documents\sound-waves\Persistencia\obj\Debug\Persistencia.Properties.Resources.resources
+C:\Users\Tatiara\Documents\sound-waves\Persistencia\obj\Debug\Persistencia.csproj.GenerateResource.Cache

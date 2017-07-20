@@ -1,0 +1,3 @@
+C:\Users\Tatiara\Documents\sound-waves\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Tatiara\Documents\sound-waves\Negocio\obj\Debug\Negocio.Properties.Resources.resources
+C:\Users\Tatiara\Documents\sound-waves\Negocio\obj\Debug\Negocio.csproj.GenerateResource.Cache

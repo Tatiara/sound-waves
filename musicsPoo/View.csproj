@@ -54,10 +54,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Acesso.cs" />
-    <Compile Include="Playlist.cs" />
-    <Compile Include="Musica.cs" />
-    <Compile Include="Usuario.cs" />
     <Page Include="adm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

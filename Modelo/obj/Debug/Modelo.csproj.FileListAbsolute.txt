@@ -1,0 +1,3 @@
+C:\Users\Tatiara\Documents\sound-waves\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\Tatiara\Documents\sound-waves\Modelo\obj\Debug\Modelo.Properties.Resources.resources
+C:\Users\Tatiara\Documents\sound-waves\Modelo\obj\Debug\Modelo.csproj.GenerateResource.Cache
