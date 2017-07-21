@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    class Acesso
+    public class Acesso : IId
     {
         public int Id { get; set; }
         public int IdUsuario { get; set; }

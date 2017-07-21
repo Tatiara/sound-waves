@@ -4,12 +4,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "musicsPoo\View.csproj", "{64350AE7-E2B6-40D1-BB92-BEF6CCF2CA19}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA00E748-A350-4587-8A54-0EB89142F523} = {DA00E748-A350-4587-8A54-0EB89142F523}
+		{E8D2F1BD-A739-4806-BAC8-983076AF2E3C} = {E8D2F1BD-A739-4806-BAC8-983076AF2E3C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{E8D2F1BD-A739-4806-BAC8-983076AF2E3C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{DA00E748-A350-4587-8A54-0EB89142F523}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7AEF88A7-DE9C-46C7-902D-A818D8881147} = {7AEF88A7-DE9C-46C7-902D-A818D8881147}
+		{E8D2F1BD-A739-4806-BAC8-983076AF2E3C} = {E8D2F1BD-A739-4806-BAC8-983076AF2E3C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistencia", "Persistencia\Persistencia.csproj", "{7AEF88A7-DE9C-46C7-902D-A818D8881147}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E8D2F1BD-A739-4806-BAC8-983076AF2E3C} = {E8D2F1BD-A739-4806-BAC8-983076AF2E3C}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{97B755EA-CC64-4607-8199-205C02315C6D}"
 EndProject

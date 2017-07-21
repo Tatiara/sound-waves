@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    class Usuario
+    public class Usuario : IId
     {
         public int Id { get; set; }
         public string Nome { get; set; }
@@ -15,11 +15,7 @@ namespace Modelo
         public override string ToString()
         {
             return $"{Id} - {Nome} - {Admin}";
-            if (Admin == true)
-            {
-                return Nome + "Administrador";
-            }
-            else return Nome + "Usuario";
+           //admin ou usuario
         }
     }
 }
