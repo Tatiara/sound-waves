@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Acesso.cs" />
     <Compile Include="Arquivo.cs" />
+    <Compile Include="Criptografia.cs" />
     <Compile Include="Playlist.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>
