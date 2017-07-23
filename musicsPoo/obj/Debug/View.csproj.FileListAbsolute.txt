@@ -14,3 +14,6 @@ C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\musicsPoo.Properties.
 C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\View.csproj.GenerateResource.Cache
 C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\musicsPoo.exe
 C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\musicsPoo.pdb
+C:\Users\Astro Carol\Documents\sound-waves\musicsPoo\bin\Debug\musicsPoo.exe.config
+C:\Users\Astro Carol\Documents\sound-waves\musicsPoo\obj\Debug\musicsPoo.exe
+C:\Users\Astro Carol\Documents\sound-waves\musicsPoo\obj\Debug\musicsPoo.pdb
