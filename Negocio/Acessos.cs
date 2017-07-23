@@ -10,26 +10,26 @@ namespace Negocio
     class Acessos
     {
         private Persistencia.Acesso p = new Persistencia.Acesso;
-        public List<Modelo.Acesso> Escolher()
+        public List<Modelo.Acesso> Select()
         {
-            return p.Escolher();
+            return p.Select();
         }    
 
-        public void Inserir(Modelo.Acesso a)
+        public void Insert(Modelo.Acesso a)
         {
             if (a == null)
                 throw new ArgumentNullException("Os dados não foram informados, por favor insira os dados necessários!");
-            if (p.Escolher().Where(r => r.Id).Count() > 0)
+            if (p.Select().Where(r => r.Id).Count() > 0)
                 throw new InvalidOperationException("Usuário já cadastrado...");
-            p.Inserir(a);
+            p.Insert(a);
         }
-        public void Att(Modelo.Acesso a)
+        public void Update(Modelo.Acesso a)
         {
-            p.Att(a);
+            p.Update(a);
         }
-        public void Del(Modelo.Acesso a)
+        public void Delete(Modelo.Acesso a)
         {
-            p.Del(a);
+            p.Delete(a);
         }
     }
 }
