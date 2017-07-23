@@ -26,6 +26,5 @@ namespace Persistencia
         {
             Arquivo<Modelo.Acesso>.Delete(arquivo, u);
         }
-
     }
 }

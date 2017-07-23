@@ -7,9 +7,9 @@ using Persistencia;
 
 namespace Negocio
 {
-    class Acessos
+    public class Acessos
     {
-        private Persistencia.Acesso p = new Persistencia.Acesso;
+        private Persistencia.Acesso p = new Persistencia.Acesso();
         public List<Modelo.Acesso> Select()
         {
             return p.Select();
@@ -19,8 +19,8 @@ namespace Negocio
         {
             if (a == null)
                 throw new ArgumentNullException("Os dados não foram informados, por favor insira os dados necessários!");
-            if (p.Select().Where(r => r.Id).Count() > 0)
-                throw new InvalidOperationException("Usuário já cadastrado...");
+            if (p.Select().Where(r => r.Id == a.Id).Count() > 0)
+                throw new InvalidOperationException("Dados já cadastrados...");
             p.Insert(a);
         }
         public void Update(Modelo.Acesso a)

@@ -10,7 +10,7 @@ using Modelo;
 
 namespace Persistencia 
 {
-    class Usuario 
+    public class Usuario 
     {
         private string arquivo = "c:\\Users\\Tatiara\\Desktop\\usuario.json";
         public List<Modelo.Usuario> Select()
