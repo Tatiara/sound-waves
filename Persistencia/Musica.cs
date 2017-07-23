@@ -7,7 +7,7 @@ using Modelo;
 
 namespace Persistencia
 {
-    class Musica
+    public class Musica
     {
         private string arquivo = "c:\\Users\\Tatiara\\Desktop\\usuario.json";
         public List<Modelo.Musica> Select()

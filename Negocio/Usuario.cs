@@ -18,7 +18,7 @@ namespace Negocio
         {
             if (u == null)
                 throw new ArgumentNullException("Os dados não foram informados, por favor insira os dados necessários!");
-            if (p.Select().Where(r => r.Id == r.Id).Count() > 0)
+            if (p.Select().Where(r => r.Id == u.Id).Count() > 0)
                 throw new InvalidOperationException("Usuário já cadastrado...");
             p.Insert(u);
         }
