@@ -7,7 +7,7 @@ using Modelo;
 
 namespace Persistencia
 {
-    class Acesso 
+    public class Acesso 
     {
         private string arquivo = "c:\\Users\\Tatiara\\Desktop\\usuario.json";
         public List<Modelo.Acesso> Select()

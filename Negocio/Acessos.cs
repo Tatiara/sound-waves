@@ -15,7 +15,7 @@ namespace Negocio
             return p.Select();
         }    
 
-        public void Inserir(Modelo.Acesso a)
+        public void Insert(Modelo.Acesso a)
         {
             if (a == null)
                 throw new ArgumentNullException("Os dados não foram informados, por favor insira os dados necessários!");
