@@ -54,7 +54,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="adm.xaml">
+    <Page Include="AddMusica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddUsuario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -62,8 +66,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="adm.xaml.cs">
-      <DependentUpon>adm.xaml</DependentUpon>
+    <Compile Include="AddMusica.xaml.cs">
+      <DependentUpon>AddMusica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddUsuario.xaml.cs">
+      <DependentUpon>AddUsuario.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
