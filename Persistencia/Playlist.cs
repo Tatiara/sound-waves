@@ -7,14 +7,14 @@ using Modelo;
 
 namespace Persistencia
 {
-    class Playlist
+    public class Playlist
     {
         private string arquivo = "c:\\Users\\Tatiara\\Desktop\\usuario.json";
         public List<Modelo.Playlist> Select()
         {
             return Arquivo<Modelo.Playlist>.Select(arquivo);
         }
-        public void Insert(Modelo.Usuario u)
+        public void Insert(Modelo.Playlist u)
         {
             Arquivo<Modelo.Playlist>.Insert(arquivo, u);
         }
@@ -26,6 +26,5 @@ namespace Persistencia
         {
             Arquivo<Modelo.Playlist>.Delete(arquivo, u);
         }
-
     }
 }

@@ -8,10 +8,10 @@
         Title="Adicionar Usuário" Height="355.211" Width="288.692">
     <Grid Margin="0,0,2,1" >
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Tatiara\Documents\sound-waves-master\usuario.png" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="C:\Users\Astro Carol\Documents\sound-waves\usuario.png" Stretch="UniformToFill"/>
         </Grid.Background>
 
-        <Menu Height="25" VerticalAlignment="Top">
+        <Menu Height="25" VerticalAlignment="Top" Margin="-28,84,28.4,0">
             <MenuItem Header="Voltar" Click="SairClick"/>
         </Menu>
 
