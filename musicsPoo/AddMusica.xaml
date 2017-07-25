@@ -8,7 +8,7 @@
         Title="Adicionar Música" Height="291.352" Width="264.079">
     <Grid Margin="0,0,2,2" >
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Astro Carol\Documents\sound-waves\notaM.png" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="C:\Users\Tatiara\Documents\sound-waves-master\notaM.png" Stretch="UniformToFill"/>
         </Grid.Background>
 
         <Menu Height="25" VerticalAlignment="Top">

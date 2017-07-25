@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Persistencia;
-
-namespace Negocio
+ namespace Negocio
 {
     public class Acessos
     {

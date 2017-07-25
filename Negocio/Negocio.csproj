@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Acessos.cs" />
     <Compile Include="Musicas.cs" />
+    <Compile Include="PlayList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

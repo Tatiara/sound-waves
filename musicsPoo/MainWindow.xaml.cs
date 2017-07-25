@@ -35,5 +35,57 @@ namespace musicsPoo
                 
             }
         }
+        Negocio.Usuario negocioUsuario = new Negocio.Usuario();
+        Modelo.Usuario modeloUsuario = new Modelo.Usuario();
+        Modelo.Acesso modeloAcesso = new Modelo.Acesso();
+        Negocio.Acessos negocioAcesso = new Negocio.Acessos();
+
+        LogUsuario admJanela = new LogUsuario();
+        WindowUsuario userJanela = new WindowUsuario();
+
+        private void Entrar_Click(object sender, RoutedEventArgs e)
+        {
+
+            var idAcesso = 0;
+
+            string nome = txtLogin.Text;
+            string senha = Persistencia.Criptografia.MD5Hash(txtSenha.Password.ToString());
+
+            var adminStatus = negocioUsuario.Select().Where(person => person.Nome == nome && person.Senha == senha).Single().Admin;
+            var idUser = negocioUsuario.Select().Where(person => person.Nome == nome && person.Senha == senha).Single().Id;
+
+            try
+            {
+                idAcesso = negocioAcesso.Select().OrderBy(a => a.Id).OrderByDescending(x => x.Id).Take(1).Single().Id;
+            }
+            catch (InvalidOperationException)
+            {
+                idAcesso = 1;
+            }
+            modeloUsuario.Nome = nome;
+            modeloUsuario.Senha = senha;
+
+            try
+            {
+                if (adminStatus == true)
+                {
+                    admJanela.ShowDialog();
+                }
+                else if (adminStatus == false)
+                {
+                    userJanela.ShowDialog();
+
+                    modeloAcesso.Id = idAcesso;
+                    modeloAcesso.IdUsuario = modeloUsuario.Id;
+                    modeloAcesso.Data = DateTime.Now;
+                    negocioAcesso.Insert(modeloAcesso);
+
+                }
+            }
+            catch (InvalidOperationException)
+            {
+                MessageBox.Show("usuario nao cadastrado!");
+            }
+        }
     }
 }

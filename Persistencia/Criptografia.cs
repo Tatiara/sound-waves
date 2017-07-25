@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Persistencia
 {
-    class Criptografia
+    public class Criptografia
     {
-        public string getMD5Hash(string input)
+        public static string MD5Hash(string text)
         {
             System.Security.Cryptography.MD5 md5 = System.Security.Cryptography.MD5.Create();
-            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(text);
             byte[] hash = md5.ComputeHash(inputBytes);
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
             for (int i = 0; i < hash.Length; i++)

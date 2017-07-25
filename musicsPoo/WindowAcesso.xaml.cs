@@ -14,17 +14,20 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace musicsPoo
+namespace musicsPoo //1 nome dado(View)
 {
     /// <summary>
-    /// Lógica interna para adm.xaml
+    /// Lógica interna para Window1.xaml
     /// </summary>
-    public partial class AddMusica : Window
+    public partial class Window1 : Window //WindowAcesso
     {
-        public AddMusica()
+        public Window1()
         {
             InitializeComponent();
-            this.Loaded += new RoutedEventHandler(Window_Loaded);
+            addComboBOX();
+            updateGrid();
+            
+           this.Loaded += new RoutedEventHandler(Window_Loaded);
         }
         private const int GWL_STYLE = -16;
         private const int WS_SYSMENU = 0x80000;
@@ -35,26 +38,36 @@ namespace musicsPoo
         [DllImport("user32.dll")]
         private static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
 
-
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             var hwnd = new WindowInteropHelper(this).Handle;
             SetWindowLong(hwnd, GWL_STYLE, GetWindowLong(hwnd, GWL_STYLE) & ~WS_SYSMENU);
         }
 
-        private void Salvar_Click(object sender, RoutedEventArgs e)
+        Negocio.Acessos negocioAcessos = new Negocio.Acessos();
+
+        public void addComboBOX()
         {
-            // adicionar musica
+            admAcessosComboBox.Items.Add("Escolher");
+            admAcessosComboBox.Items.Add("Id");
+            admAcessosComboBox.Items.Add("Nome");
+            admAcessosComboBox.SelectedItem = "Escolher";
         }
 
-        private void Cancelar_Click(object sender, RoutedEventArgs e)
+        public void updateGrid()
         {
-            Hide();
+            gridAcessosAdm.ItemsSource = null;
+            gridAcessosAdm.ItemsSource = negocioAcessos.Select();
         }
 
         private void SairClick(object sender, RoutedEventArgs e)
         {
             Hide();
+        }
+
+        private void AtualizarClick(object sender, RoutedEventArgs e)
+        {
+            updateGrid();
         }
     }
 }

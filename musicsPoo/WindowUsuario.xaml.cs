@@ -14,18 +14,24 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace musicsPoo
 {
     /// <summary>
-    /// Lógica interna para adm.xaml
+    /// Lógica interna para WindowUsuario.xaml
     /// </summary>
-    public partial class AddMusica : Window
+    public partial class WindowUsuario : Window
     {
-        public AddMusica()
+        public WindowUsuario()
+        
         {
             InitializeComponent();
+
+            optionsComboBOX();
+
             this.Loaded += new RoutedEventHandler(Window_Loaded);
         }
+
         private const int GWL_STYLE = -16;
         private const int WS_SYSMENU = 0x80000;
 
@@ -35,26 +41,38 @@ namespace musicsPoo
         [DllImport("user32.dll")]
         private static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
 
-
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             var hwnd = new WindowInteropHelper(this).Handle;
             SetWindowLong(hwnd, GWL_STYLE, GetWindowLong(hwnd, GWL_STYLE) & ~WS_SYSMENU);
         }
 
-        private void Salvar_Click(object sender, RoutedEventArgs e)
+        private void optionsComboBOX()
         {
-            // adicionar musica
-        }
-
-        private void Cancelar_Click(object sender, RoutedEventArgs e)
-        {
-            Hide();
+            userPesquisaContatoComboBox.Items.Add("Escolher");
+            userPesquisaContatoComboBox.Items.Add("Nome da música");
+            userPesquisaContatoComboBox.Items.Add("Cantor");
+            userPesquisaContatoComboBox.SelectedItem = "Escolher";
         }
 
         private void SairClick(object sender, RoutedEventArgs e)
         {
-            Hide();
+            Close();
+        }
+
+        private void addContatoClick(object sender, RoutedEventArgs e)//musica
+        {
+            // adicionar
+        }
+
+        private void userPesquisaContatoComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // comboBox userPesquisaContato
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // pesquisar contato
         }
     }
 }

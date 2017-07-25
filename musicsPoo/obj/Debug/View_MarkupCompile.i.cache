@@ -1,11 +1,11 @@
-﻿musicsPoo
+﻿View
 
 
 winexe
 C#
 .cs
 C:\Users\Tatiara\Documents\sound-waves-master\musicsPoo\obj\Debug\
-musicsPoo
+View
 none
 false
 DEBUG;TRACE
@@ -16,5 +16,5 @@ C:\Users\Tatiara\Documents\sound-waves-master\musicsPoo\App.xaml
 161903962654
 AddMusica.xaml;AddUsuario.xaml;AdmW.xaml;MainWindow.xaml;WindowAcesso.xaml;WindowUsuario.xaml;
 
-True
+False
 
