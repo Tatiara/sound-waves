@@ -21,7 +21,7 @@
         <Label  FontWeight="Heavy" Content="Senha: " FontSize="16" HorizontalAlignment="Left" Margin="111,147,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.992,1.063"/>
         <TextBox Name="textCadastroLoginSenha" FontSize="16"  HorizontalAlignment="Left"  Height="27" Margin="189,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label FontWeight="Heavy"  Content="Admin: " FontSize="16" HorizontalAlignment="Left" Margin="105,195,0,0" VerticalAlignment="Top" Height="36" RenderTransformOrigin="0.486,1.167"/>
-        <ComboBox Name="admAddUserComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="188,203,0,0" SelectionChanged="AdmAddUserComboBox_SelectionChanged" Height="25"/>
+        <ComboBox Name="AdminUserComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="188,203,0,0" SelectionChanged="AdminUserComboBox_SelectionChanged" Height="25"/>
         <Button Content="Cadastrar" FontSize="16" HorizontalAlignment="Left" Margin="42,269,0,0" VerticalAlignment="Top" Width="126" Click="Adicionar_Click" Height="28"/>
         <Button Content="Cancelar" FontSize="16" HorizontalAlignment="Left" Margin="184,273,0,0" VerticalAlignment="Top" Width="126" Click="Canccelar_Click" Height="28"/>
 

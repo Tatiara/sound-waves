@@ -12,21 +12,31 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace musicsPoo
+namespace View
 {
     /// <summary>
-    /// Lógica interna para adm.xaml
+    /// Lógica interna para Admin.xaml
     /// </summary>
-    public partial class adm : Window
+    public partial class Admin : Window
     {
-        public adm()
+        public Admin()
         {
             InitializeComponent();
         }
 
-        private void add_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //add
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
