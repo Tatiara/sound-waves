@@ -1,0 +1,26 @@
+﻿<Window x:Class="musicsPoo.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:musicsPoo"
+        mc:Ignorable="d"
+        Title="WindowAcesso" Height="402" Width="374">
+    <Grid>
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Atualizar"  Click="AtualizarClick"></MenuItem>
+            <MenuItem Header="Sair" Click="SairClick" Width="39"/>
+        </Menu>
+
+        <Label FontWeight="Thin" Content="Consultar Log de acessos" FontSize="21" HorizontalAlignment="Left" Margin="71,29,0,0" VerticalAlignment="Top" Height="40" Width="236"/>
+        <DataGrid Name="gridAcessosAdm" HorizontalAlignment="Left" Height="182" VerticalAlignment="Top" Width="339" Margin="16,178,0,0"/>
+        <Label Content="Pesquisar" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="88,71,0,0" RenderTransformOrigin="0.941,0.517"/>
+        <TextBox Name="textAcessosPesquisa" FontSize="14"  HorizontalAlignment="Left" Height="23" Margin="85,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="193" RenderTransformOrigin="0.532,-0.126"/>
+        <ComboBox Name="AdminAcessosComboBox"  FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="169,75,0,0" SelectionChanged="admAcessosComboBox_SelectionChanged"/>
+        <Button Content="Pesquisar" FontSize="16" HorizontalAlignment="Left" Margin="136,141,0,0" VerticalAlignment="Top" Width="92" Height="31" Click="PesquisarClick"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Tatiara\Documents\sound-waves-master\logg.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+    </Grid>
+</Window>

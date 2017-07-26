@@ -14,6 +14,11 @@ namespace Negocio
         {
             return p.Select();
         }
+        public Modelo.Usuario Find(int id)
+        {
+            List<Modelo.Usuario> lista_u = p.Select();
+            return lista_u.Find(u => u.Id == id);
+        }
         public void Insert(Modelo.Usuario u)
         {
             if (u == null)
