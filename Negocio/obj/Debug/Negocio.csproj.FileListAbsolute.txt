@@ -1,3 +1,15 @@
-C:\Users\Tatiara\Documents\sound-waves\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 C:\Users\Tatiara\Documents\sound-waves\Negocio\obj\Debug\Negocio.Properties.Resources.resources
 C:\Users\Tatiara\Documents\sound-waves\Negocio\obj\Debug\Negocio.csproj.GenerateResource.Cache
+C:\Users\Tatiara\Documents\sound-waves\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\Tatiara\Documents\sound-waves\Negocio\bin\Debug\Negocio.dll
+C:\Users\Tatiara\Documents\sound-waves\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Tatiara\Documents\sound-waves\Negocio\bin\Debug\Modelo.dll
+C:\Users\Tatiara\Documents\sound-waves\Negocio\bin\Debug\Persistencia.dll
+C:\Users\Tatiara\Documents\sound-waves\Negocio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Tatiara\Documents\sound-waves\Negocio\bin\Debug\Modelo.pdb
+C:\Users\Tatiara\Documents\sound-waves\Negocio\bin\Debug\Modelo.dll.config
+C:\Users\Tatiara\Documents\sound-waves\Negocio\bin\Debug\Persistencia.pdb
+C:\Users\Tatiara\Documents\sound-waves\Negocio\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Tatiara\Documents\sound-waves\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Tatiara\Documents\sound-waves\Negocio\obj\Debug\Negocio.dll
+C:\Users\Tatiara\Documents\sound-waves\Negocio\obj\Debug\Negocio.pdb

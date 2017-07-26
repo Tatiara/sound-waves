@@ -1,19 +1,13 @@
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\bin\Debug\musicsPoo.exe.config
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\bin\Debug\musicsPoo.exe
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\bin\Debug\musicsPoo.pdb
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\View.csprojResolveAssemblyReference.cache
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\adm.g.cs
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\MainWindow.g.cs
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\App.g.cs
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\musicsPoo_MarkupCompile.cache
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\musicsPoo_MarkupCompile.lref
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\adm.baml
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\MainWindow.baml
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\musicsPoo.g.resources
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\musicsPoo.Properties.Resources.resources
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\View.csproj.GenerateResource.Cache
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\musicsPoo.exe
-C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\musicsPoo.pdb
 C:\Users\Astro Carol\Documents\sound-waves\musicsPoo\bin\Debug\musicsPoo.exe.config
 C:\Users\Astro Carol\Documents\sound-waves\musicsPoo\obj\Debug\musicsPoo.exe
 C:\Users\Astro Carol\Documents\sound-waves\musicsPoo\obj\Debug\musicsPoo.pdb
+C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\AddMusica.g.cs
+C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\AddUsuario.g.cs
+C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\AdmW.g.cs
+C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\MainWindow.g.cs
+C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\WindowAcesso.g.cs
+C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\WindowUsuario.g.cs
+C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\App.g.cs
+C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\View_MarkupCompile.cache
+C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\View_MarkupCompile.lref
+C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\View.csprojResolveAssemblyReference.cache

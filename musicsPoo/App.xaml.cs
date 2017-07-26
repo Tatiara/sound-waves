@@ -8,10 +8,11 @@ using System.Windows;
 
 namespace musicsPoo
 {
-    /// <summary>
-    /// Interação lógica para App.xaml
-    /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            InitializeComponent();
+        }
     }
 }

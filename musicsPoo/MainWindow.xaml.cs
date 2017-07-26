@@ -1,4 +1,74 @@
-﻿using System;
+﻿using System.Windows;
+using System.Windows.Controls;
+
+namespace musicsPoo
+{
+    /// <summary>
+    /// Interação lógica para MainWindow.xam
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        protected void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (usuario.Text == "user" && senha.Password == "123")
+            {
+                AddMusica w = new AddMusica();//prox pasta
+                w.Show();
+                Close();
+            }
+            else
+                MessageBox.Show("Usuário ou Senha Inválidos");
+        }
+
+        protected void Usuario_(object sender, TextChangedEventArgs e)
+        {
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////
+/* using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,19 +83,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace musicsPoo
-{
-    /// <summary>
-    /// Interação lógica para MainWindow.xam
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+ * 
+ * 
+ * private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (usuario.Text == "" || senha.Text == "") {
                 MessageBox.Show("Preencha todos os campos");
@@ -86,6 +146,4 @@ namespace musicsPoo
             {
                 MessageBox.Show("usuario nao cadastrado!");
             }
-        }
-    }
-}
+        }*/

@@ -17,11 +17,11 @@
             <ColumnDefinition Width="7*"/>
             <ColumnDefinition Width="99*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock HorizontalAlignment="Center"  Text="Bem Vindo! Aqui você encontra suas músicas favoritas!" VerticalAlignment="Top" Height="37"  FontSize="20" Margin="18,0,30,0" Width="482" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Center" FontWeight="Heavy" Text="Bem Vindo! Sound-waves" VerticalAlignment="Top" Height="45"  FontSize="25" Margin="93,26,76,0" Width="324" Grid.Column="2"/>
         <TextBlock FontWeight="Heavy" HorizontalAlignment="Center" Text="Login" Margin="121,92,308,0" VerticalAlignment="Top" FontSize="20" FontStyle="Oblique" RenderTransformOrigin="0.59,1.874" Width="64" Grid.Column="2" Height="27"/>
-        <Label FontWeight="Heavy" HorizontalAlignment="Center" Content="Senha" Margin="109,136,312,0" FontSize="20" FontStyle="Oblique" VerticalAlignment="Top" Grid.Column="2" Height="37" Width="72"/>
+        <Label FontWeight="Heavy" HorizontalAlignment="Center" Content="Senha" Margin="109,142,312,0" FontSize="20" FontStyle="Oblique" VerticalAlignment="Top" Grid.Column="2" Height="37" Width="72"/>
         <TextBox Name="usuario" HorizontalAlignment="Left" Height="23" Text="" VerticalAlignment="Top" Width="173" Margin="209,95,0,0" Grid.Column="2" RenderTransformOrigin="1.147,0.139"/>
-        <TextBox Name="senha" HorizontalAlignment="Left" Height="23" Text="" VerticalAlignment="Top" Width="173" Margin="209,141,0,0" Grid.Column="2"/>
+        <PasswordBox Name="senha" HorizontalAlignment="Left" Height="31" Margin="209,144,0,0" VerticalAlignment="Top" Width="168" Grid.Column="2"/>
         <Button Content="Entrar" Name="Entrar" HorizontalAlignment="Left" Margin="182,192,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.Column="2" Height="20"/>
 
     </Grid>

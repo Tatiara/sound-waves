@@ -1,3 +1,12 @@
-C:\Users\Tatiara\Documents\sound-waves\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
 C:\Users\Tatiara\Documents\sound-waves\Persistencia\obj\Debug\Persistencia.Properties.Resources.resources
 C:\Users\Tatiara\Documents\sound-waves\Persistencia\obj\Debug\Persistencia.csproj.GenerateResource.Cache
+C:\Users\Tatiara\Documents\sound-waves\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\Tatiara\Documents\sound-waves\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\Tatiara\Documents\sound-waves\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\Tatiara\Documents\sound-waves\Persistencia\bin\Debug\Modelo.dll
+C:\Users\Tatiara\Documents\sound-waves\Persistencia\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Tatiara\Documents\sound-waves\Persistencia\bin\Debug\Modelo.pdb
+C:\Users\Tatiara\Documents\sound-waves\Persistencia\bin\Debug\Modelo.dll.config
+C:\Users\Tatiara\Documents\sound-waves\Persistencia\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Tatiara\Documents\sound-waves\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\Tatiara\Documents\sound-waves\Persistencia\obj\Debug\Persistencia.pdb
