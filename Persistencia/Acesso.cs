@@ -16,11 +16,11 @@ namespace Persistencia
         }
         public void Insert(Modelo.Acesso u)
         {
-            Arquivo<Modelo.Acesso>.Insert(arquivo, u);//??
+            Arquivo<Modelo.Acesso>.Insert(arquivo, u);
         }
         public void Update(Modelo.Acesso u)
         {
-            Arquivo<Modelo.Acesso>.Update(arquivo, u); //??
+            Arquivo<Modelo.Acesso>.Update(arquivo, u);
         }
         public void Delete(Modelo.Acesso u)
         {

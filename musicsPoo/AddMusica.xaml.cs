@@ -26,14 +26,18 @@ namespace View
 
         private void Adicionar_Click(object sender, RoutedEventArgs e)
         {
+            var IDultimo = negocioMusic.Select().OrderBy(user => user.Id).OrderByDescending(x => x.Id).Take(1).Single().Id;
+
             try
             {
+                modelMusic.Id = IDultimo + 1;
                 modelMusic.Titulo = textTitulo.Text;
                 modelMusic.Cantor = textMusic.Text;
                 negocioMusic.Insert(modelMusic);
             }
             catch (System.ArgumentNullException) { }
             catch (System.InvalidOperationException) { }
+            MessageBox.Show("Música cadastrada!");
         }
 
         private void Canccelar_Click(object sender, RoutedEventArgs e)

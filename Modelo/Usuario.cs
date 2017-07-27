@@ -15,7 +15,7 @@ namespace Modelo
         public override string ToString()
         {
             return $"{Id} - {Nome} - {Admin}";
-           //admin ou usuario
+
         }
     }
 }

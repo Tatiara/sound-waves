@@ -40,15 +40,15 @@ namespace View
         {
             int idAcesso;
 
-            string login = usuario.Text; //recebe
+            string login = usuario.Text;
             var s = senha.Password;
             Modelo.Usuario modeloUser = new Modelo.Usuario();
-            modeloUser.Nome = login; //bd
+            modeloUser.Nome = login; 
             modeloUser.Senha = s;
 
             
-            var status = negocioUser.Select().Where(p => p.Nome == login  && p.Senha == s).Single().Admin;
-            var idU = negocioUser.Select().Where(p => p.Nome == login && p.Senha == s).Single().Id;
+            //var status = negocioUser.Select().Where(p => p.Nome == login  && p.Senha == s).Single().Admin;
+            //var idU = negocioUser.Select().Where(p => p.Nome == login && p.Senha == s).Single().Id;
 
             Mus.Show();
             Close();

@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace View
 {
-    /// <summary>
-    /// Lógica interna para Admin.xaml
-    /// </summary>
     public partial class Admin : Window
     {
         public Admin()

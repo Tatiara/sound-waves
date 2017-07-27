@@ -1,4 +1,7 @@
 ﻿using System.Windows;
+using System.Linq;
+
+
 namespace View
 {
     public partial class AddUsuario : Window
@@ -13,14 +16,18 @@ namespace View
 
         private void Adicionar_Click(object sender, RoutedEventArgs e)
         {
+            var IDultimo = addUser.Select().OrderBy(user => user.Id).OrderByDescending(x => x.Id).Take(1).Single().Id;
+            
             try
             {
+                modelUser.Id = IDultimo + 1;
                 modelUser.Nome = textCadastroLogin.Text;
-                modelUser.Senha = textCadastroLoginSenha.Password;
+                modelUser.Senha = Persistencia.Criptografia.MD5Hash(textCadastroLoginSenha.Password);
                 addUser.Insert(modelUser);
             }
             catch (System.ArgumentNullException) { }
             catch (System.InvalidOperationException) { }
+            MessageBox.Show("Usuário Cadastrado!");
         }
         
         private void Canccelar_Click(object sender, RoutedEventArgs e)
