@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Persistencia;
 
-namespace musicsPoo
+namespace View
 {
     /// <summary>
     /// Interação lógica para MainWindow.xam
@@ -27,45 +27,32 @@ namespace musicsPoo
             EntradaLogin();
         }
 
-        Modelo.Usuario modeloUser = new Modelo.Usuario();
+        Modelo.Usuario modeloUser;
         Negocio.Usuario negocioUser = new Negocio.Usuario();
         Modelo.Acesso modeloAcesso = new Modelo.Acesso();
         Negocio.Acessos negocioAcessos = new Negocio.Acessos();
 
         View.Admin Admin = new View.Admin();
         View.AddMusica Mus = new View.AddMusica();
+        View.LognAdmin logadm = new View.LognAdmin();
         
         protected void Button_Click(object sender, RoutedEventArgs e)
         {
             int idAcesso;
 
-            string login = usuario.Text;
+            string login = usuario.Text; //recebe
             var s = senha.Password;
-
-            modeloUser.Nome = login;
+            Modelo.Usuario modeloUser = new Modelo.Usuario();
+            modeloUser.Nome = login; //bd
             modeloUser.Senha = s;
 
             
             var status = negocioUser.Select().Where(p => p.Nome == login  && p.Senha == s).Single().Admin;
+            var idU = negocioUser.Select().Where(p => p.Nome == login && p.Senha == s).Single().Id;
 
-            if (modeloUser.Admin == true)
-            {
-                Admin.Show();
-                Close();
-            }
-            else if(modeloUser.Admin == false)
-            {
-
-                if (negocioUser.Find(modeloUser.Id) != null)
-                {
-                    Mus.Show();
-                    Close();
-                }
-                else
-                    MessageBox.Show("Usuário ou Senha Inválidos");
-            }
-            else
-                MessageBox.Show("Usuário ou Senha Inválidos");
+            Mus.Show();
+            Close();
+           
 
         }
 
@@ -76,11 +63,22 @@ namespace musicsPoo
 
         public void EntradaLogin()
         {
-            modeloUser.Id = 1;
-            modeloUser.Nome = "user";
-            modeloUser.Senha = Persistencia.Criptografia.MD5Hash("123");
-            modeloUser.Admin = true;
-            negocioUser.Insert(modeloUser);
+            if(negocioUser.Select().Count() < 1)
+            {
+                modeloUser = new Modelo.Usuario();
+                modeloUser.Id += 1;
+                modeloUser.Nome = "user";
+                modeloUser.Senha = Persistencia.Criptografia.MD5Hash("123");
+                modeloUser.Admin = true;
+                negocioUser.Insert(modeloUser);
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+            logadm.Show();
+            Close();
         }
     }
 }

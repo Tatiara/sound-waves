@@ -15,35 +15,20 @@ using System.Windows.Shapes;
 namespace View
 {
     /// <summary>
-    /// Lógica interna para Admin.xaml
+    /// Lógica interna para LognAdmin.xaml
     /// </summary>
-    public partial class Admin : Window
+    public partial class LognAdmin : Window
     {
-        public Admin()
+        public LognAdmin()
         {
             InitializeComponent();
         }
 
-        View.AddUsuario user = new View.AddUsuario();
-        View.Window1 acesso = new View.Window1();
-        View.AddMusica music = new View.AddMusica();
+        View.Admin admin = new View.Admin();
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            user.Show();
-            Close();
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            acesso.Show();
-            Close();
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            music.Show();
+            admin.Show();
             Close();
         }
     }

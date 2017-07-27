@@ -9,7 +9,7 @@ namespace Persistencia
 {
     public class Acesso 
     {
-        private string arquivo = "c:\\Users\\Tatiara\\Desktop\\usuario.json";
+        private string arquivo = "c:\\Users\\Tatiara\\Desktop\\acesso.json";
         public List<Modelo.Acesso> Select()
         {
             return Arquivo<Modelo.Acesso>.Select(arquivo);

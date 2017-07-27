@@ -1,4 +1,4 @@
-﻿<Window x:Class="musicsPoo.AddUsuario"
+﻿<Window x:Class="View.AddUsuario"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -11,15 +11,11 @@
             <ImageBrush ImageSource="C:\Users\Tatiara\Documents\sound-waves-master\usuario.png" Stretch="UniformToFill"/>
         </Grid.Background>
 
-        <Menu Height="25" VerticalAlignment="Top">
-            <MenuItem Header="Voltar" Click="SairClick"/>
-        </Menu>
-
         <Label FontWeight="Thin" Content="Adicionar Usuário" FontSize="21" HorizontalAlignment="Left" Margin="95,48,0,0" VerticalAlignment="Top" Height="40" Width="170"/>
         <Label FontWeight="Heavy" Content="Login: " FontSize="16"  HorizontalAlignment="Left" Margin="115,114,0,0" VerticalAlignment="Top" Height="35" Background="Transparent" Foreground="Black"/>
         <TextBox FontWeight="Heavy" Name="textCadastroLogin" FontSize="16"  HorizontalAlignment="Left"  Height="26" Margin="188,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.472,-0.242"/>
         <Label  FontWeight="Heavy" Content="Senha: " FontSize="16" HorizontalAlignment="Left" Margin="111,147,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.992,1.063"/>
-        <TextBox Name="textCadastroLoginSenha" FontSize="16"  HorizontalAlignment="Left"  Height="27" Margin="189,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox Name="textCadastroLoginSenha" FontSize="16"  HorizontalAlignment="Left"  Height="27" Margin="189,159,0,0" VerticalAlignment="Top" Width="120"/>
         <Label FontWeight="Heavy"  Content="Admin: " FontSize="16" HorizontalAlignment="Left" Margin="105,195,0,0" VerticalAlignment="Top" Height="36" RenderTransformOrigin="0.486,1.167"/>
         <ComboBox Name="AdminUserComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="188,203,0,0" SelectionChanged="AdminUserComboBox_SelectionChanged" Height="25"/>
         <Button Content="Cadastrar" FontSize="16" HorizontalAlignment="Left" Margin="42,269,0,0" VerticalAlignment="Top" Width="126" Click="Adicionar_Click" Height="28"/>

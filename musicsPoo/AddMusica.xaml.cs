@@ -21,19 +21,29 @@ namespace View
             InitializeComponent();
         }
 
+        Modelo.Musica modelMusic = new Modelo.Musica();
+        Negocio.Musicas negocioMusic = new Negocio.Musicas();
+
         private void Adicionar_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                modelMusic.Titulo = textTitulo.Text;
+                modelMusic.Cantor = textMusic.Text;
+                negocioMusic.Insert(modelMusic);
+            }
+            catch (System.ArgumentNullException) { }
+            catch (System.InvalidOperationException) { }
         }
 
         private void Canccelar_Click(object sender, RoutedEventArgs e)
         {
-
+            Close();
         }
 
         private void SairClick(object sender, RoutedEventArgs e)
         {
-
+            Close();
         }
     }
 }

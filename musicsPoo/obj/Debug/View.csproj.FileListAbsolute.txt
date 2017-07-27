@@ -35,3 +35,5 @@ C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\View.Properties.Resou
 C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\View.csproj.GenerateResource.Cache
 C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\View.exe
 C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\View.pdb
+C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\LognAdmin.g.cs
+C:\Users\Tatiara\Documents\sound-waves\musicsPoo\obj\Debug\LognAdmin.baml

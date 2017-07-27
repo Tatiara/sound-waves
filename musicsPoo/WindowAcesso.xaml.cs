@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace musicsPoo //1 nome dado(View)
+namespace View //1 nome dado(View)
 {
     public partial class Window1 : Window //WindowAcesso
     {
@@ -26,7 +26,7 @@ namespace musicsPoo //1 nome dado(View)
 
         private void SairClick(object sender, RoutedEventArgs e)
         {
-
+            Close();
         }
     }
 }

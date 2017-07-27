@@ -9,7 +9,7 @@ namespace Persistencia
 {
     public class Musica
     {
-        private string arquivo = "c:\\Users\\Tatiara\\Desktop\\usuario.json";
+        private string arquivo = "c:\\Users\\Tatiara\\Desktop\\musica.json";
         public List<Modelo.Musica> Select()
         {
             return Arquivo<Modelo.Musica>.Select(arquivo);
